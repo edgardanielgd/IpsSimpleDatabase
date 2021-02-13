@@ -132,7 +132,7 @@ void agregar(jugador *&primero, string nombre, string IP){
 		aux->siguiente->IP=IP;
 		aux->siguiente->siguiente=NULL;
 		ofstream f("pl.txt",ios::app);
-		f<<"\n"<<nombre<<"\n"<<IP<<"\n";
+		f<<"\n"<<nombre<<"\n"<<IP;
 		f.close();
 	}else{
 		aux=new jugador;
@@ -140,7 +140,7 @@ void agregar(jugador *&primero, string nombre, string IP){
 		aux->IP=IP;
 		aux->siguiente=NULL;
 		ofstream f("pl.txt",ios::app);
-		f<<nombre<<"\n"<<IP<<"\n";
+		f<<nombre<<"\n"<<IP;
 		f.close();
 }
 	}
